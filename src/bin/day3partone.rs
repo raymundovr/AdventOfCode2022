@@ -3,7 +3,7 @@ use anyhow::Result;
 
 fn main() -> Result<()> {
     println!("Solution to day 3");
-    let contents = read_to_string("src/inputs/inputday3")?;
+    let contents = read_to_string("inputs/inputday3")?;
     let mut result = 0;
 
     for line in contents.split('\n').filter(|l| !l.is_empty()) {

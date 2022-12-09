@@ -2,7 +2,7 @@ use anyhow::Result;
 use std::fs::read_to_string;
 
 fn main() -> Result<()> {
-    let input = read_to_string("src/inputs/inputday4")?;
+    let input = read_to_string("inputs/inputday4")?;
 
     let result = input.lines().filter(|l| l.len() > 1).fold(0, |acc, line| {
         if let Some((left, right)) = line.split_once(',') {

@@ -31,7 +31,7 @@ fn get_initial_stacks(file_contents: &str, stacks: usize) -> Vec<VecDeque<String
 }
 
 fn main() -> Result<()> {
-    let contents = read_to_string("src/inputs/inputday5")?;
+    let contents = read_to_string("inputs/inputday5")?;
     let first_line = contents.lines().next().expect("Cannot read first line");
 
     let stacks = (first_line.len() + 1) / 4;
